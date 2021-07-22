@@ -1,9 +1,0 @@
-name: SBUI
-version: 0.0.1
-author: FoxInTheBox
-main: Foxy\SkyBlock\Main
-api: 3.0.0
-
-commands:
-     sbui:
-      description: Open a U.I to manage your skyblock island
