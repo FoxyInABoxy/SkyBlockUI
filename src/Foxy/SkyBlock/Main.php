@@ -344,7 +344,7 @@ class Main extends PluginBase implements Listener {
     });
     $form->setTitle("SkyBlockUI - Disband Island");
     $form->addButton("Yes");
-    $form->addButton("§4No");
+    $form->addButton("No");
     $form->sendToPlayer($player);
     return $form;
   }
@@ -357,7 +357,7 @@ class Main extends PluginBase implements Listener {
       $this->getServer()->dispatchCommand($player, "is transfer " . $data[0]);
     });
     $form->setTitle("SkyBlockUI - Tranfer Island Ownership");
-    $form->addInput("");
+    $form->addInput("Enter the GamerTag/Name of the player");
     $form->sendToPlayer($player);
     return $form;
   }
