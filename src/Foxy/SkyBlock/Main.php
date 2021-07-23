@@ -11,15 +11,6 @@ use pocketmine\event\Listener;
 
 class Main extends PluginBase implements Listener {
 
-    public function onEnable(){
-        $this->getLogger()->info("SkyBlockUI is up and running, NO MALFUNCTIONS DETECTED!!");
-        $this->getLogger()->info("This plugin was created by FoxInTheBox");
-    }
-    public function onDisable(){
-        $this->getLogger()->info("SkyBlockUI is now offline, NO MALFUNCTIONS DETECTED!!");  
-        $this->getLogger()->info("This plugin was created by FoxInTheBox");
-    }
-
   public function onCommand(CommandSender $sender, Command $cmd, String $label, Array $args): bool {
     switch($cmd->getName()){
 			case "sbui":
