@@ -8,8 +8,13 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
+use JackMD\UpdateNotifier\UpdateNotifier;
 
 class Main extends PluginBase implements Listener {
+	
+	
+  public function checkUpdates(): void {
+        UpdateNotifier::checkUpdate($this->plugin->getDescription()->getName(), $this->plugin->getDescription()->getVersion());	
 
   public function onCommand(CommandSender $sender, Command $cmd, String $label, Array $args): bool {
     switch($cmd->getName()){
