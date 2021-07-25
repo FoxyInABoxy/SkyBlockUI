@@ -1,5 +1,5 @@
 name: SkyBlockUI
-version: 0.0.3
+version: 0.0.4
 author: FoxInTheBox
 main: Foxy\SkyBlock\Main
 api: 3.0.0
