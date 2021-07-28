@@ -103,7 +103,7 @@ class Main extends PluginBase implements Listener {
       if($data === null){
         return true;
       }
-      $this->getServer()->dispatchCommand($player, "is visit " . $data[0]);
+      $this->getServer()->dispatchCommand($player, "is visit $data[0]");
     });
     $form->setTitle("SkyBlockUI - Island Visiting");
 		$form->addInput("Enter the GamerTag/Name of the player");
@@ -158,7 +158,7 @@ class Main extends PluginBase implements Listener {
       if($data === null){
         return true;
       }
-      $this->getServer()->dispatchCommand($player, "is invite " . $data[0]);
+      $this->getServer()->dispatchCommand($player, "is invite $data[0]");
     }); 
     $form->setTitle("SkyBlockUI - Invite Players");
 		$form->addInput("Enter the GamerTag/Name of the player");
@@ -171,7 +171,7 @@ class Main extends PluginBase implements Listener {
       if($data === null){
         return true;
       }
-      $this->getServer()->dispatchCommand($player, "is deny " . $data[0]);
+      $this->getServer()->dispatchCommand($player, "is deny $data[0]");
     });
     $form->setTitle("SkyBlockUI - Deny Island Invite");
 		$form->addInput("Enter the GamerTag/Name of the player");
@@ -184,7 +184,7 @@ class Main extends PluginBase implements Listener {
       if($data === null){
         return true;
       }
-      $this->getServer()->dispatchCommand($player, "is banish " . $data[0]);
+      $this->getServer()->dispatchCommand($player, "is banish $data[0]");
     });
     $form->setTitle("SkyBlockUI - Island Ban Player");
 		$form->addInput("Enter the GamerTag/Name of the player");
@@ -197,7 +197,7 @@ class Main extends PluginBase implements Listener {
       if($data === null){
         return true;
       }
-      $this->getServer()->dispatchCommand($player, "is cooperate " . $data[0]);
+      $this->getServer()->dispatchCommand($player, "is cooperate $data[0]");
     });
     $form->setTitle("SkyBlock - Add as CO-OP");
 		$form->addInput("Enter the GamerTag/Name of the player");
@@ -247,7 +247,7 @@ class Main extends PluginBase implements Listener {
       if($data === null){
         return true;
       }
-      $this->getServer()->dispatchCommand($player, "is promote " . $data[0]);
+      $this->getServer()->dispatchCommand($player, "is promote $data[0]");
     });
     $form->setTitle("SkyBlockUI - Promote Members");
 		$form->addInput("Enter the GamerTag/Name of the player");
@@ -260,7 +260,7 @@ class Main extends PluginBase implements Listener {
       if($data === null){
         return true;
       }
-      $this->getServer()->dispatchCommand($player, "is demote " . $data[0]);
+      $this->getServer()->dispatchCommand($player, "is demote $data[0]");
     });
     $form->setTitle("SkyBlockUI - Demote Members");
 		$form->addInput("Enter the GamerTag/Name of the player");
@@ -273,7 +273,7 @@ class Main extends PluginBase implements Listener {
       if($data === null){
         return true;
       }
-      $this->getServer()->dispatchCommand($player, "is fire " . $data[0]);
+      $this->getServer()->dispatchCommand($player, "is fire $data[0]");
     });
     $form->setTitle("SkyBlockUI - Fire Members");
 		$form->addInput("Enter the GamerTag/Name of the player");
@@ -351,7 +351,7 @@ class Main extends PluginBase implements Listener {
       if($data === null){
 				return true;
 			}
-      $this->getServer()->dispatchCommand($player, "is transfer " . $data[0]);
+      $this->getServer()->dispatchCommand($player, "is transfer $data[0]");
     });
     $form->setTitle("SkyBlockUI - Tranfer Island Ownership");
     $form->addInput("Enter the GamerTag/Name of the player");
